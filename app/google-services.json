@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "555071005340",
+    "project_id": "booapp-3b4fe",
+    "storage_bucket": "booapp-3b4fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555071005340:android:8807e2c81dfbab3e668359",
+        "android_client_info": {
+          "package_name": "com.moringaschool.booapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555071005340-p5s2mdgv277ni72hqeqgoi35q9dpdtbt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moringaschool.booapp",
+            "certificate_hash": "f973e6cc7e3b09d673382834ecdb6a3d88e0e141"
+          }
+        },
+        {
+          "client_id": "555071005340-0j4sa8239u1mk5tn4sto3vbhaoevsg58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJgTLDhzxwiGvPUsfPkFzdfQneLEJwokI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555071005340-0j4sa8239u1mk5tn4sto3vbhaoevsg58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
