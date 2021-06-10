@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BooApp">
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".UserProfile"></activity>
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".PhoneVerify" />
         <activity android:name=".Phone_Login" />
         <activity android:name=".Login" />
