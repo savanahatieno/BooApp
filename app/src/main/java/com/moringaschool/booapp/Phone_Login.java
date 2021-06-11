@@ -208,15 +208,16 @@ public class Phone_Login extends AppCompatActivity {
                     String phone = firebaseAuth.getCurrentUser().getPhoneNumber();
                     Toast.makeText(Phone_Login.this, "Logged In as " + phone, Toast.LENGTH_SHORT).show();
 
-                    startActivity(new Intent(Phone_Login.this, ProfileActivity.class));
+                    startActivity(new Intent(Phone_Login.this, UserProfile.class));
 
                 })
-                .addOnFailureListener(e -> {
-                    //failed signing in
-                    pd.dismiss();
-                    Toast.makeText(Phone_Login.this, "" +e.getMessage(), Toast.LENGTH_SHORT).show();
-                });
+                .addOnFailureListener(this::onFailure);
     }
 
 
+    private void onFailure(Exception e) {
+//failed signing in
+        pd.dismiss();
+        Toast.makeText(Phone_Login.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
+    }
 }

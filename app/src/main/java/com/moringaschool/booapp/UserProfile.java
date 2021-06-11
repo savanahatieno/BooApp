@@ -1,16 +1,26 @@
 package com.moringaschool.booapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import com.firebase.ui.auth.data.model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.annotations.NotNull;
 
-public class ProfileActivity extends AppCompatActivity {
+public class UserProfile extends AppCompatActivity {
+
 
     TextView phoneTv;
     Button logoutButton;
@@ -18,12 +28,15 @@ public class ProfileActivity extends AppCompatActivity {
 
     FirebaseAuth firebaseAuth;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_user_profile);
 
 
+//        userPhoneNumber = findViewById(R.id.userPhoneNumber);
         phoneTv = findViewById(R.id.phoneTv);
         logoutButton = findViewById(R.id.logoutBtn);
 
@@ -38,6 +51,8 @@ public class ProfileActivity extends AppCompatActivity {
                 checkUserStatus();
             }
         });
+
+
 
     }
 
