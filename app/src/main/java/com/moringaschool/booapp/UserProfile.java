@@ -23,7 +23,6 @@ public class UserProfile extends AppCompatActivity {
 
 
     TextView phoneTv;
-    EditText userPhoneNumber;
     Button logoutButton;
 
 
@@ -37,7 +36,7 @@ public class UserProfile extends AppCompatActivity {
         setContentView(R.layout.activity_user_profile);
 
 
-        userPhoneNumber = findViewById(R.id.userPhoneNumber);
+//        userPhoneNumber = findViewById(R.id.userPhoneNumber);
         phoneTv = findViewById(R.id.phoneTv);
         logoutButton = findViewById(R.id.logoutBtn);
 
@@ -65,7 +64,6 @@ public class UserProfile extends AppCompatActivity {
             //user is logged in
             String phone = firebaseUser.getPhoneNumber();
             phoneTv.setText(phone);
-            userPhoneNumber.setText(phone);
 
         }else {
             //user is not logged in

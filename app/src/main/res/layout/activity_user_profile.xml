@@ -95,27 +95,27 @@
         <!--        New Layout-->
 
 
-        <EditText
-            android:id="@+id/userPhoneNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/round_corner"
-            android:drawableStart="@drawable/ic_baseline_phone_24"
-            android:drawablePadding="5dp"
-            android:ems="10"
-            android:hint="Phone Number"
-            android:inputType="phone"
-            android:paddingStart="13dp" />
+<!--        <EditText-->
+<!--            android:id="@+id/userPhoneNumber"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:background="@drawable/round_corner"-->
+<!--            android:drawableStart="@drawable/ic_baseline_phone_24"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Phone Number"-->
+<!--            android:inputType="phone"-->
+<!--            android:paddingStart="13dp" />-->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your'e logged in as "
-            android:textColor="@color/black"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="20dp"
+            android:text="Your'e logged in as "
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/phoneTv"

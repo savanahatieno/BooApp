@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (InterruptedException e){
                     e.printStackTrace();
                 } finally {
-                    Intent intent = new Intent(MainActivity.this, Phone_Login.class);
+                    Intent intent = new Intent(MainActivity.this, UserProfile.class);
                     startActivity(intent);
                     finish();
                 }
